@@ -1,0 +1,291 @@
+body {
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: grid;
+}
+
+.menu {
+    text-decoration: none;
+    display: inline-block;
+    position: fixed;
+    line-height: 60px;
+    padding-left: 170px;
+    padding-right: auto;
+    font-size: 25px;
+    justify-content: center;
+    background-clip: content-box;
+    letter-spacing: 2px;
+    font-family: 'Philosopher', sans-serif;
+    max-height: 100%;
+    min-width: 500px;
+    position: fixed;
+    top: 40px;
+
+}
+
+.menu > li {
+    display: inline-block;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 11vw);
+    grid-gap: 15px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.gallery__item--4 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 8;
+    grid-row-end: 11;
+}
+
+.gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 8;
+}
+
+.gallery__item--6 {
+    grid-column-start: 7;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 8;
+}
+
+.gallery__item--7 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 8;
+}
+
+.gallery__item--8 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 11;
+}
+
+.gallery__item--9 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 8;
+    grid-row-end: 11;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 6vw);
+    grid-gap: 30px;
+}
+
+.element1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5
+}
+
+.element2 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: justify-all;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    position: fixed;
+}
+
+.menu a {
+    padding: 100px;
+    font-family: 'Philosopher', sans-serif;
+    color: black;
+    background: url(img/pink.png);
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section {
+    width: 100vw;
+    min-height: 100vh;
+    max-width: 100%;
+    padding: 40px;
+}
+
+#home {
+    background: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#about {
+    background: white;
+    width: auto;
+    height: 110vh;
+}
+
+#works {
+    background: white;
+    height: auto;
+    width: auto;
+}
+
+#contacts {
+    background: url(img/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+h1 {
+    font-size: 56px;
+    color: black;
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+p {
+    margin-bottom: 32px;
+    padding-left: 32px;
+    text-align: justify-all;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h3 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: floralwhite;
+    background: black;
+}
+
+a:hover {
+    background: floralwhite;
+    color: black;
+}
+
+.navbar a:hover {
+    background: url(img/white.png);
+    color: black;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img7 {
+    width: 100px;
+    margin: 40px 0px 0px 40px;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.img8 {
+    width: 100px;
+    margin: 40px 0px 0px 40px;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.logo {
+    max-height: 190px;
+    max-width: 90px;
+    margin: 32px 32px 32px 32px;
+    position: fixed;
+    top: 10;
+}
+
+.savurko {
+    width: 890px;
+    height: auto;
+    padding-left: 410px;
+    padding-top: 150px;
+}
+
+.wrapper-icons {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 180px;
+    width: 25%
+}
+
+.end {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
+.lg-sub-html,
+#lg-counter {
+    color: white;
+    font-size: 22px;
+    font-family: 'Philosopher', sans-serif;
+}
