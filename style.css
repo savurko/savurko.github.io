@@ -171,7 +171,7 @@ img {
 }
 
 #home {
-    background: url(img/background.gif);
+    background: url(img/background);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
